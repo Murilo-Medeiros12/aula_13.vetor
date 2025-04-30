@@ -16,13 +16,31 @@ public class Atividade03 {
 			vetor_a[i] = ler.nextInt();
 			System.out.print("informe o " + (1 + i) + "º valor de B ");
 			vetor_b[i] = ler.nextInt();
+		} 
+		
+		System.out.println();                           //espaçamento
+		System.out.println("vetor A");         // organização do vetor A
+		
+		for (int i = 0; i < 5; i++) {
+			System.out.println(vetor_a[i]);
 		}
+		
+		System.out.println();                           //espaçamento
+		System.out.println("vetor b");          // organização vetor B
+		
+		for (int i = 0; i < 5; i++) {
+			System.out.println(vetor_b[i]);
+		}
+        
+		System.out.println();                           //espaçamento
+		System.out.println("vetor C");         // Organização do vetor C + atribução
+		
 		for (int i = 0; i < 5; i++) {
 			vetor_c[i] = vetor_a[i];
 			System.out.println(vetor_c[i]);
 			vetor_c[i] = vetor_b[i];
 			System.out.println(vetor_c[i]);
+			ler.close();
 		}
-		ler.close();
 	}
 }
